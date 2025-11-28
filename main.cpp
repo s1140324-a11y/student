@@ -1,19 +1,13 @@
 #include <iostream>
-using namespace std;
 
-int main() {
-    cout << "請輸入你的年齡:" << endl;
-
-    int age;
-    cin >> age;
-
-    if (age >= 18) {
-        cout << "你已滿 18 歲，是成年人！" << endl;
-    } else {
-        cout << "你未滿 18 歲，加油努力讀書！" << endl;
+int main()
+{
+    int sum =0;
+    for(int i =1; i < 6; i++) {
+        std::cout << "現在的i值是: " << i << "\n";
+        sum=sum+i;
     }
+    std::cout << "1+..+5總和是: " << sum << "\n";
 
     return 0;
 }
-
-    
