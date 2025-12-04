@@ -1,13 +1,17 @@
 #include <iostream>
+using namespace std;
 
-int main()
-{
-    int sum =0;
-    for(int i =1; i < 6; i++) {
-        std::cout << "現在的i值是: " << i << "\n";
-        sum=sum+i;
+int main() {
+    // 外層迴圈表示乘數
+    for (int i = 1; i <= 9; ++i) {
+        // 內層迴圈表示被乘數
+        for (int j = 1; j <= 9; ++j) {
+            // 印出乘法表每個數字
+            cout << i << " * " << j << " = " << i * j << "\t"; 
+        }
+        // 換行
+        cout << endl;
     }
-    std::cout << "1+..+5總和是: " << sum << "\n";
 
     return 0;
 }
